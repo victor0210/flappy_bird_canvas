@@ -117,7 +117,7 @@ $(function () {
             $(document).on('keydown', ()=> {
                 clearInterval(getReady);
                 $(document).off('keydown');
-                bird.vY = -1;
+                bird.vY = -1.2;
 
 //                start game
                 _this.gameStart(cxt, bird);
