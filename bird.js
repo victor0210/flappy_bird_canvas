@@ -147,7 +147,7 @@ $(function () {
                 sound3.currentTime = 0;
                 sound3.play();
                 t = 0;
-                bird.vY = -0.6;
+                bird.vY = -0.8;
             });
 
 //            draw everything
