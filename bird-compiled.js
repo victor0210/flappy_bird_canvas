@@ -173,7 +173,7 @@ $(function () {
                     sound3.currentTime = 0;
                     sound3.play();
                     t = 0;
-                    bird.vY = -0.8;
+                    bird.vY = -0.7;
                 });
 
                 //            draw everything
@@ -219,19 +219,19 @@ $(function () {
             value: function drawScore(cxt) {
                 if (this.score < 10) {
                     var img = document.getElementById('score_' + this.score);
-                    cxt.drawImage(img, 720, 20, 16, 20);
+                    cxt.drawImage(img, 70, 20, 16, 20);
                 } else if (this.score >= 10) {
                     var img1 = document.getElementById('score_' + ~~(this.score / 10));
                     var img2 = document.getElementById('score_' + this.score % 10);
-                    cxt.drawImage(img1, 705, 20, 16, 20);
-                    cxt.drawImage(img2, 735, 20, 16, 20);
+                    cxt.drawImage(img1, 55, 20, 16, 20);
+                    cxt.drawImage(img2, 85, 20, 16, 20);
                 } else if (this.score >= 100) {
                     var _img = document.getElementById('score_' + ~~(this.score / 10));
                     var _img2 = document.getElementById('score_' + this.score % 10);
                     var img3 = document.getElementById('score_' + this.score % 10);
-                    cxt.drawImage(_img, 690, 20, 16, 20);
-                    cxt.drawImage(_img2, 720, 20, 16, 20);
-                    cxt.drawImage(img3, 750, 20, 16, 20);
+                    cxt.drawImage(_img, 40, 20, 16, 20);
+                    cxt.drawImage(_img2, 70, 20, 16, 20);
+                    cxt.drawImage(img3, 100, 20, 16, 20);
                 }
             }
         }, {
