@@ -77,7 +77,7 @@ $(function () {
         this.moveTo = [1, -1][~~(Math.random() * 2)];
 
         //            max distance of moving
-        this.distance = 80;
+        this.distance = 40;
 
         //            record distance of having moved
         this.pipeDistance = 0;
@@ -142,7 +142,7 @@ $(function () {
                 $(document).on('keydown', function () {
                     clearInterval(getReady);
                     $(document).off('keydown');
-                    bird.vY = -0.8;
+                    bird.vY = -1;
 
                     //                start game
                     _this.gameStart(cxt, bird);
